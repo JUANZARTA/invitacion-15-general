@@ -15,6 +15,9 @@
   />
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Preload hero — imagen crítica above the fold -->
+  <link rel="preload" as="image" href="Fotos/Img (2).jpeg" fetchpriority="high" />
 </head>
 <body>
 
@@ -217,22 +220,22 @@
 
     <div class="gallery-grid" role="list">
       <div class="gallery-item reveal reveal-d1" role="listitem" aria-label="Ver foto 1">
-        <img src="Fotos/Img (1).jpeg" alt="Katherin - foto 1" loading="lazy" />
+        <img src="Fotos/Img (1).jpeg" alt="Katherin - foto 1" loading="lazy" decoding="async" />
         <div class="gallery-overlay" aria-hidden="true"><span>✦</span></div>
       </div>
 
       <div class="gallery-item reveal reveal-d2" role="listitem" aria-label="Ver foto 2">
-        <img src="Fotos/Img (3).jpeg" alt="Katherin - foto 2" loading="lazy" />
+        <img src="Fotos/Img (3).jpeg" alt="Katherin - foto 2" loading="lazy" decoding="async" />
         <div class="gallery-overlay" aria-hidden="true"><span>✦</span></div>
       </div>
 
       <div class="gallery-item reveal reveal-d3" role="listitem" aria-label="Ver foto 3">
-        <img src="Fotos/Img (4).jpeg" alt="Katherin - foto 3" loading="lazy" />
+        <img src="Fotos/Img (4).jpeg" alt="Katherin - foto 3" loading="lazy" decoding="async" />
         <div class="gallery-overlay" aria-hidden="true"><span>✦</span></div>
       </div>
 
       <div class="gallery-item reveal reveal-d4" role="listitem" aria-label="Ver foto 4">
-        <img src="Fotos/Img (5).jpeg" alt="Katherin - foto 4" loading="lazy" />
+        <img src="Fotos/Img (5).jpeg" alt="Katherin - foto 4" loading="lazy" decoding="async" />
         <div class="gallery-overlay" aria-hidden="true"><span>✦</span></div>
       </div>
     </div>
@@ -382,7 +385,7 @@
       <p class="vive-text">Comparte las fotos que captures en mi celebración.</p>
 
       <div class="vive-qr">
-        <img src="Fotos/QR Fotos.png" alt="QR para subir fotos" />
+        <img src="Fotos/QR Fotos.png" alt="QR para subir fotos" loading="lazy" decoding="async" />
       </div>
 
       <a
