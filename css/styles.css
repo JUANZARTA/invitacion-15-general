@@ -2,22 +2,35 @@
    ROOT & RESET
    ============================================================ */
 :root {
-  /* Paleta principal */
-  --clr-white:       #ffffff;   /* blanco cálido — fondos claros */
-  --clr-pink:        #8850AA;   /* morado oscuro — fondos de sección / acentos */
-  --clr-pink-hover:  #6E3A92;   /* morado hover — botones / interacción */
-  --clr-pink-text:   #6E3A92;   /* morado oscuro — texto sobre fondo claro */
+  /* Paleta principal — morado pastel */
+  --clr-white:       #ffffff;
+  --clr-pink:        #9B72CF;   /* morado pastel — botones, acentos */
+  --clr-pink-hover:  #7D55B0;   /* hover — un tono más profundo */
+  --clr-pink-text:   #6B44A0;   /* texto morado — legible sobre blanco */
 
-  /* Grises — solo para texto sobre fondos claros */
-  --clr-gray-dark:   #2D2D2D;   /* texto principal sobre fondo claro */
-  --clr-gray-mid:    #5A5A5A;   /* texto secundario sobre fondo claro */
-  --clr-gray:        #8A8A8A;   /* texto muted sobre fondo claro */
-  --clr-gray-light:  #D4D4D4;   /* bordes, divisores */
-  --clr-gray-bg:     #F2F2F0;   /* fondo alterno muy sutil */
+  /* Grises con tinte morado sutil */
+  --clr-gray-dark:   #2D2736;   /* texto principal — casi negro con tinte morado */
+  --clr-gray-mid:    #5A5268;   /* texto secundario */
+  --clr-gray:        #8A82A0;   /* texto muted */
+  --clr-gray-light:  #E2D5F0;   /* bordes con tinte lavanda */
+  --clr-gray-bg:     #F8F2FD;   /* fondo alterno sutil */
+
+  /* Morados extendidos */
+  --clr-purple-deep:  #5A3888;   /* profundo — botón premium, bordes oscuros */
+  --clr-purple-dark:  #422870;   /* hover oscuro */
+  --clr-purple-pale:  #CDB0E8;   /* lavanda media — acentos suaves */
+  --clr-purple-light: #E8D5F8;   /* lavanda clara — bordes y divisores */
+  --clr-purple-tint:  #F6EFFE;   /* lavanda muy sutil — fondo de sección */
+  --clr-purple-muted: #B0A0C8;   /* lavanda muted — texto secundario */
 
   /* Sombras */
-  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.08);
-  --shadow-pink: 0 4px 20px rgba(136, 80, 170, 0.50);
+  --shadow-soft:         0 8px 32px rgba(0, 0, 0, 0.07);
+  --shadow-pink:         0 4px 20px rgba(155, 114, 207, 0.45);
+  --shadow-pink-hover:   0 8px 28px rgba(155, 114, 207, 0.55);
+  --shadow-pink-subtle:  0 18px 48px rgba(155, 114, 207, 0.13);
+  --shadow-deep:         0 4px 18px rgba(90, 56, 136, 0.22);
+  --shadow-deep-hover:   0 8px 28px rgba(90, 56, 136, 0.32);
+  --shadow-popular:      0 8px 48px rgba(90, 56, 136, 0.32);
 
   --ff-script: 'Great Vibes', cursive;
   --ff-serif:  'Cormorant Garamond', serif;
@@ -1483,108 +1496,191 @@ footer {
 /* ============================================================
    PLANES — sección de precios
    ============================================================ */
+#planes { background: var(--clr-purple-tint); }
+
 .planes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.8rem;
-  max-width: 980px;
+  gap: 1.5rem;
+  max-width: 1020px;
   margin: 0 auto 3.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
+/* ── Card base ───────────────────────────────────────────── */
 .plan-card {
-  position: relative;
-  padding: 2.5rem 2rem;
   background: var(--clr-white);
-  border-radius: var(--radius);
-  border: 1.5px solid var(--clr-gray-light);
+  border-radius: 20px;
+  border: 1.5px solid var(--clr-purple-light);
   box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  padding: 2.5rem 2rem;
   transition: transform var(--t), box-shadow var(--t);
 }
 .plan-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0,0,0,.10);
+  box-shadow: var(--shadow-pink-subtle);
 }
 
-.plan-card--popular {
-  border-color: var(--clr-pink);
-  box-shadow: 0 8px 32px rgba(136,80,170,.22);
-  padding-top: 3rem;
-}
-
+/* ── Badge "Más Popular" ─────────────────────────────────── */
 .plan-badge {
-  position: absolute;
-  top: -1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--clr-pink);
-  color: #fff;
+  display: inline-block;
+  align-self: flex-start;
   font-family: var(--ff-sans);
-  font-size: .68rem;
-  font-weight: 600;
-  letter-spacing: .2em;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .12em;
   text-transform: uppercase;
-  padding: .38rem 1.3rem;
+  padding: .38rem 1.1rem;
   border-radius: 50px;
-  white-space: nowrap;
-  text-shadow: none;
+  margin-bottom: 1rem;
+  background: var(--clr-purple-tint);
+  color: var(--clr-pink-text);
+  border: 1.5px solid var(--clr-purple-pale);
 }
 
+/* ── Nombre del plan ─────────────────────────────────────── */
 .plan-name {
   font-family: var(--ff-serif);
-  font-size: 1.6rem;
+  font-size: 2.6rem;
+  font-weight: 600;
   color: var(--clr-gray-dark);
-  margin-bottom: .1rem;
+  line-height: 1.1;
+  margin-bottom: .6rem;
 }
 
+/* ── Precio ──────────────────────────────────────────────── */
 .plan-price {
-  font-family: var(--ff-serif);
-  font-size: 1.55rem;
+  display: inline-flex;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+.price-sym {
+  font-family: var(--ff-sans);
+  font-size: .95rem;
+  font-weight: 700;
   color: var(--clr-pink-text);
-  font-weight: 600;
+  align-self: flex-start;
+  margin-top: .1rem;
   line-height: 1;
 }
-.plan-price span {
-  font-size: .9rem;
-  color: var(--clr-gray);
-  font-weight: 400;
-  margin-left: .2rem;
+.price-num {
+  font-family: var(--ff-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-pink-text);
+  line-height: 1;
+  letter-spacing: -.01em;
+}
+.price-cop {
+  font-family: var(--ff-sans);
+  font-size: .65rem;
+  font-weight: 600;
+  color: var(--clr-purple-muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-left: .4rem;
 }
 
+/* ── Divisor ─────────────────────────────────────────────── */
+.plan-divider {
+  border: none;
+  border-top: 1px solid var(--clr-purple-light);
+  margin: 0 0 1.25rem;
+}
+
+/* ── Features ────────────────────────────────────────────── */
 .plan-features {
   list-style: none;
-  flex: 1;
   padding: 0;
+  flex: 1;
+  margin-bottom: 2rem;
 }
 .plan-features li {
-  font-family: var(--ff-serif);
-  font-size: 1rem;
-  color: var(--clr-gray-mid);
-  padding: .5rem 0;
-  border-bottom: 1px solid var(--clr-gray-light);
   display: flex;
-  align-items: center;
-  gap: .65rem;
+  align-items: flex-start;
+  gap: .6rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--clr-purple-light);
+  font-family: var(--ff-serif);
+  font-size: .98rem;
+  color: var(--clr-gray-mid);
+  line-height: 1.4;
 }
 .plan-features li:last-child { border-bottom: none; }
 .plan-features li::before {
   content: '✓';
-  color: var(--clr-pink-text);
-  font-weight: 700;
+  color: var(--clr-pink);
   font-size: .85rem;
+  font-weight: 600;
   flex-shrink: 0;
+  line-height: 1.4;
 }
 
+/* ── Botones ─────────────────────────────────────────────── */
 .plan-btn {
   width: 100%;
   justify-content: center;
-  margin-top: .5rem;
   text-align: center;
+  border-radius: 50px;
+  font-family: var(--ff-sans);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  padding: .9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background var(--t), color var(--t), box-shadow var(--t), transform var(--t);
+}
+.plan-btn--outline {
+  background: transparent;
+  color: var(--clr-purple-deep);
+  border: 1.5px solid var(--clr-purple-pale);
+}
+.plan-btn--outline:hover {
+  background: var(--clr-pink);
+  color: var(--clr-white);
+  border-color: var(--clr-pink);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-pink);
+}
+.plan-btn--solid {
+  background: var(--clr-white);
+  color: var(--clr-pink);
+  border: 1.5px solid var(--clr-white);
+  box-shadow: var(--shadow-soft);
+}
+.plan-btn--solid:hover {
+  background: rgba(255,255,255,.88);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+}
+.plan-btn--dark {
+  background: var(--clr-purple-deep);
+  color: var(--clr-white);
+  border: 1.5px solid var(--clr-purple-deep);
+  box-shadow: var(--shadow-deep);
+}
+.plan-btn--dark:hover {
+  background: var(--clr-purple-dark);
+  border-color: var(--clr-purple-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-deep-hover);
 }
 
+/* ── Card popular ────────────────────────────────────────── */
+.plan-card--popular {
+  background: var(--clr-white);
+  border-color: var(--clr-pink);
+  box-shadow: var(--shadow-pink-subtle);
+}
+
+/* ── Card premium ────────────────────────────────────────── */
+.plan-card--premium { border-color: var(--clr-purple-deep); }
+
+/* ── Contacto ────────────────────────────────────────────── */
 .planes-contact {
   text-align: center;
   max-width: 580px;
@@ -1619,6 +1715,7 @@ footer {
    ============================================================ */
 @media (max-width: 768px) {
   .planes-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+  .price-num { font-size: 2.4rem; }
 
   .nav-links     { display: none; }
   .nav-drawer    { display: flex; }
