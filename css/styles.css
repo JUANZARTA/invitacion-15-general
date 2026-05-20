@@ -1603,6 +1603,18 @@ footer {
 .planes-contact .btn { margin-top: 1.8rem; }
 
 /* ============================================================
+   MAPA EMBED
+   ============================================================ */
+.map-embed {
+  width: 100%;
+  margin-top: 1.8rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(136,80,170,.2);
+}
+.map-embed iframe { display: block; width: 100%; }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
