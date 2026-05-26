@@ -831,6 +831,46 @@ a   { text-decoration: none; color: inherit; }
 }
 
 /* ============================================================
+   ACTION BUTTONS — Calendar & Share
+   ============================================================ */
+.btn-calendar,
+.btn-share {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .6rem 1.4rem;
+  border-radius: 3rem;
+  font-family: inherit;
+  font-size: .82rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1.5px solid var(--clr-pink);
+  color: var(--clr-pink);
+  background: transparent;
+  transition: all var(--t);
+  margin: 0 .35rem .75rem;
+}
+.btn-calendar:hover,
+.btn-share:hover {
+  background: var(--clr-pink);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.btn-calendar svg,
+.btn-share svg { flex-shrink: 0; }
+@media (max-width: 480px) {
+  .btn-calendar,
+  .btn-share {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 .6rem;
+  }
+}
+
+/* ============================================================
    VIVE MIS XV
    ============================================================ */
 #vive-xv { text-align: center; }
