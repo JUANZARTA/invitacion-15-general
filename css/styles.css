@@ -2,35 +2,35 @@
    ROOT & RESET
    ============================================================ */
 :root {
-  /* Paleta principal — morado pastel */
+  /* Paleta principal — azul bebé pastel */
   --clr-white:       #ffffff;
-  --clr-pink:        #9B72CF;   /* morado pastel — botones, acentos */
-  --clr-pink-hover:  #7D55B0;   /* hover — un tono más profundo */
-  --clr-pink-text:   #6B44A0;   /* texto morado — legible sobre blanco */
+  --clr-pink:        #6FB3DE;   /* azul bebé — botones, acentos */
+  --clr-pink-hover:  #4E93BE;   /* hover — un tono más profundo */
+  --clr-pink-text:   #2F6E92;   /* texto azul — legible sobre blanco */
 
-  /* Grises con tinte morado sutil */
-  --clr-gray-dark:   #2D2736;   /* texto principal — casi negro con tinte morado */
-  --clr-gray-mid:    #5A5268;   /* texto secundario */
-  --clr-gray:        #8A82A0;   /* texto muted */
-  --clr-gray-light:  #E2D5F0;   /* bordes con tinte lavanda */
-  --clr-gray-bg:     #F8F2FD;   /* fondo alterno sutil */
+  /* Grises con tinte azul sutil */
+  --clr-gray-dark:   #22303A;   /* texto principal — casi negro con tinte azul */
+  --clr-gray-mid:    #48606E;   /* texto secundario */
+  --clr-gray:        #7A96A3;   /* texto muted */
+  --clr-gray-light:  #D6E9F2;   /* bordes con tinte celeste */
+  --clr-gray-bg:     #F0F9FC;   /* fondo alterno sutil */
 
-  /* Morados extendidos */
-  --clr-purple-deep:  #5A3888;   /* profundo — botón premium, bordes oscuros */
-  --clr-purple-dark:  #422870;   /* hover oscuro */
-  --clr-purple-pale:  #CDB0E8;   /* lavanda media — acentos suaves */
-  --clr-purple-light: #E8D5F8;   /* lavanda clara — bordes y divisores */
-  --clr-purple-tint:  #F6EFFE;   /* lavanda muy sutil — fondo de sección */
-  --clr-purple-muted: #B0A0C8;   /* lavanda muted — texto secundario */
+  /* Azules extendidos */
+  --clr-purple-deep:  #2A5F82;   /* profundo — botón premium, bordes oscuros */
+  --clr-purple-dark:  #1D4560;   /* hover oscuro */
+  --clr-purple-pale:  #A9D8EE;   /* celeste medio — acentos suaves */
+  --clr-purple-light: #D2ECF8;   /* celeste claro — bordes y divisores */
+  --clr-purple-tint:  #F1FAFD;   /* celeste muy sutil — fondo de sección */
+  --clr-purple-muted: #86A9BC;   /* celeste muted — texto secundario */
 
   /* Sombras */
   --shadow-soft:         0 8px 32px rgba(0, 0, 0, 0.07);
-  --shadow-pink:         0 4px 20px rgba(155, 114, 207, 0.45);
-  --shadow-pink-hover:   0 8px 28px rgba(155, 114, 207, 0.55);
-  --shadow-pink-subtle:  0 18px 48px rgba(155, 114, 207, 0.13);
-  --shadow-deep:         0 4px 18px rgba(90, 56, 136, 0.22);
-  --shadow-deep-hover:   0 8px 28px rgba(90, 56, 136, 0.32);
-  --shadow-popular:      0 8px 48px rgba(90, 56, 136, 0.32);
+  --shadow-pink:         0 4px 20px rgba(111, 179, 222, 0.45);
+  --shadow-pink-hover:   0 8px 28px rgba(111, 179, 222, 0.55);
+  --shadow-pink-subtle:  0 18px 48px rgba(111, 179, 222, 0.13);
+  --shadow-deep:         0 4px 18px rgba(42, 95, 130, 0.22);
+  --shadow-deep-hover:   0 8px 28px rgba(42, 95, 130, 0.32);
+  --shadow-popular:      0 8px 48px rgba(42, 95, 130, 0.32);
 
   --ff-script: 'Great Vibes', cursive;
   --ff-serif:  'Cormorant Garamond', serif;
@@ -116,8 +116,8 @@ a   { text-decoration: none; color: inherit; }
 
 @keyframes loadBar { to { width: 100%; } }
 @keyframes glow {
-  0%,100% { text-shadow: 0 0 16px rgba(110,58,146,.3); }
-  50%      { text-shadow: 0 0 40px rgba(110,58,146,.7); }
+  0%,100% { text-shadow: 0 0 16px rgba(42,95,130,.3); }
+  50%      { text-shadow: 0 0 40px rgba(42,95,130,.7); }
 }
 
 /* ============================================================
@@ -134,9 +134,9 @@ a   { text-decoration: none; color: inherit; }
   transition: background var(--t), backdrop-filter var(--t), box-shadow var(--t);
 }
 #navbar.scrolled {
-  background: rgba(136, 80, 170,0.96);
+  background: rgba(78, 147, 190,0.96);
   backdrop-filter: blur(14px);
-  box-shadow: 0 2px 20px rgba(110,58,146,.25);
+  box-shadow: 0 2px 20px rgba(42,95,130,.25);
 }
 
 .nav-logo {
@@ -274,7 +274,7 @@ a   { text-decoration: none; color: inherit; }
   font-size: clamp(4rem, 13vw, 9rem);
   color: #fff;
   line-height: 1;
-  text-shadow: 0 4px 24px rgba(136,80,170,.5);
+  text-shadow: 0 4px 24px rgba(78,147,190,.5);
   opacity: 0;
   transform: translateY(22px);
   animation: fadeUp .8s ease .65s forwards;
@@ -606,7 +606,7 @@ a   { text-decoration: none; color: inherit; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(136,80,170,.55), rgba(45,45,45,.40));
+  background: linear-gradient(135deg, rgba(78,147,190,.55), rgba(45,45,45,.40));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -649,8 +649,8 @@ a   { text-decoration: none; color: inherit; }
 
 .lb-btn {
   position: absolute;
-  background: rgba(136,80,170,.12);
-  border: 1px solid rgba(136,80,170,.25);
+  background: rgba(78,147,190,.12);
+  border: 1px solid rgba(78,147,190,.25);
   color: var(--clr-pink);
   cursor: pointer;
   border-radius: 50%;
@@ -661,7 +661,7 @@ a   { text-decoration: none; color: inherit; }
   font-size: 1.3rem;
   transition: background var(--t);
 }
-.lb-btn:hover { background: rgba(136,80,170,.25); }
+.lb-btn:hover { background: rgba(78,147,190,.25); }
 #lb-close { top: 1.5rem; right: 1.5rem; font-size: 1rem; }
 #lb-prev  { left: 1.5rem;  top: 50%; transform: translateY(-50%); font-size: 1.5rem; }
 #lb-next  { right: 1.5rem; top: 50%; transform: translateY(-50%); font-size: 1.5rem; }
@@ -813,7 +813,7 @@ a   { text-decoration: none; color: inherit; }
   background: var(--clr-pink-hover);
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(136,80,170,.55);
+  box-shadow: 0 8px 28px rgba(78,147,190,.55);
 }
 
 /* WhatsApp — gris oscuro elegante */
@@ -1459,9 +1459,9 @@ footer {
   align-items: center;
   justify-content: center;
   transition: all var(--t);
-  box-shadow: 0 4px 20px rgba(136,80,170,.55);
+  box-shadow: 0 4px 20px rgba(78,147,190,.55);
 }
-.music-btn:hover       { transform: scale(1.1); box-shadow: 0 6px 28px rgba(136,80,170,.7); }
+.music-btn:hover       { transform: scale(1.1); box-shadow: 0 6px 28px rgba(78,147,190,.7); }
 .music-btn.paused      { opacity: .75; }
 .music-btn.playing     { animation: pulse 2.5s ease infinite; }
 
@@ -1488,7 +1488,7 @@ footer {
 .wa-float:hover {
   transform: scale(1.12);
   background: var(--clr-pink-hover);
-  box-shadow: 0 8px 28px rgba(136,80,170,.55);
+  box-shadow: 0 8px 28px rgba(78,147,190,.55);
 }
 .wa-float svg { width: 26px; height: 26px; fill: #fff; }
 
@@ -1498,8 +1498,8 @@ footer {
 @keyframes fadeUp  { to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn  { to { opacity: 1; } }
 @keyframes pulse   {
-  0%,100% { box-shadow: 0 0 0 0   rgba(136,80,170,.5); }
-  50%     { box-shadow: 0 0 0 10px rgba(136,80,170,0);  }
+  0%,100% { box-shadow: 0 0 0 0   rgba(78,147,190,.5); }
+  50%     { box-shadow: 0 0 0 10px rgba(78,147,190,0);  }
 }
 
 /* ── Reveal keyframes ── */
@@ -1746,7 +1746,7 @@ footer {
   margin-top: 1.8rem;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid rgba(136,80,170,.2);
+  border: 1px solid rgba(78,147,190,.2);
 }
 .map-embed iframe { display: block; width: 100%; }
 
