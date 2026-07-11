@@ -1,21 +1,22 @@
 Para poder diseñar la invitación, por favor envíame la siguiente información:
 
-• Nombre completo de la cumpleañera : Katherin Andrea Zarta Pino
-• Nombre de los padrinos o personas destacadas de la fiesta [Ximena Campo - Enrique Bedoya]
-• Fecha del evento [ 06 de Diciembre 2026]
-• Lugar de la celebración (si tienes ubicación en Maps, también compártela - Casona el cortijo  - Camino real - https://maps.app.goo.gl/qbPgNbGN4c3bksdD6
-• Hora :  7:00 pm- 
-• Lugar de recepción (si aplica)
-• Sugerencias de vestimenta : Traje formal -  gala 
-• Sugerencias o indicaciones se reveserva el color morado pastel  y toda clase de morados 
-• ⁠especiales para la fiesta
-• Información sobre los obsequios (lluvia de sobres)
-• Itinerario del evento: Poner sugerencia en diseño mientras tanto
-• Número de WhatsApp para confirmar asistencia: 3128622945
-• recomendaciones (habilita el código HTML comentado)
-• color de la web: morado principal remplazando el rosa
+• Nombre completo de la cumpleañera: María José Espinosa Díaz
+• Padres: Álvaro Espinosa Agudelo y Diana Maritza Díaz López
+• Ceremonia religiosa: Jueves 6 de Agosto 2026, 6:30 PM, Iglesia La Ximena [dirección/Maps pendiente]
+• Fiesta: Sábado 8 de Agosto 2026, 7:00 PM, en Milán [dirección/Maps pendiente]
+• Sugerencias de vestimenta: Formal
+• Color reservado: Azul bebé (y toda clase de azules)
+• Información sobre los obsequios: Lluvia de sobres
+• Itinerario del evento: sugerido por el desarrollador (horarios estándar desde las 7:00 PM)
+• Números de WhatsApp para confirmar asistencia: 3216728607 (principal) y 3148850179
+• Canción de fondo para la invitación: PENDIENTE
 
+Adicionalmente:
+• Fotos: PENDIENTE (4 fotos)
+• Link de Google Drive donde se guardarán las fotografías para generar el código QR: PENDIENTE
 
-
-
-
+Notas de diseño:
+• Tema de color del sitio: azul bebé (paleta adaptada del tema morado usado en el proyecto de Katherin)
+• Sección "Planes" removida en este proyecto (solo en esta ruta, no tocar la plantilla general)
+• Card "Notas" (No niños / Estacionamiento) desactivada — no fue confirmada por la clienta
+• Fecha límite de confirmación (25 de Julio 2026): sugerida por el desarrollador, sin confirmar con la clienta

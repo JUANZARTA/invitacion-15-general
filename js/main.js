@@ -2,13 +2,13 @@
    CONFIGURACIÓN — cambiá solo este bloque, se actualiza todo
    ============================================================ */
 const XV = {
-  name:      'Katherin Andrea Zarta Pino',
-  nameFirst: 'Katherin Andrea',
-  nameLast:  'Zarta Pino',
-  nameShort: 'Katherin',
-  phone:     '573128622945',
-  hashtag:   '#XVKatherin',
-  eventDate: new Date('2026-12-06T19:00:00'),
+  name:      'María José Espinosa Díaz',
+  nameFirst: 'María José',
+  nameLast:  'Espinosa Díaz',
+  nameShort: 'María José',
+  phone:     '573216728607',
+  hashtag:   '#XVMariaJose',
+  eventDate: new Date('2026-08-08T19:00:00'),
 };
 
 // Inyecta el nombre en todos los elementos marcados
@@ -73,7 +73,7 @@ window.addEventListener('load', () => {
   resize();
   window.addEventListener('resize', resize);
 
-  const COLORS = ['#8850AA', '#A060C8', '#BE8DC8', '#6E3A92', '#C49ADB'];
+  const COLORS = ['#4E93BE', '#6FB3DE', '#A9D8EE', '#2A5F82', '#BFE0F2'];
 
   class Petal {
     constructor(randomY = false) { this.init(randomY); }
@@ -218,10 +218,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
    GALLERY LIGHTBOX
    ============================================================ */
 const GALLERY_SRCS = [
-  'Fotos/Img (1).jpeg',
-  'Fotos/Img (3).jpeg',
-  'Fotos/Img (4).jpeg',
-  'Fotos/Img (5).jpeg',
+  'img/fotos/Img (1).jpeg',
+  'img/fotos/Img (3).jpeg',
+  'img/fotos/Img (4).jpeg',
+  'img/fotos/Img (5).jpeg',
 ];
 
 let lbIndex    = 0;
